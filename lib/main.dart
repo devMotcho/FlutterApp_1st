@@ -9,7 +9,7 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: GradientContainer(Colors.deepPurple, Color.fromARGB(255, 161, 126, 223)),
+        body: GradientContainer.purple(),
       ),
     ),
   ); //create widget
