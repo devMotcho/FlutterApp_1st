@@ -31,14 +31,24 @@ class GradientContainer extends StatelessWidget {
       ),
       child: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assests/images/dice-2.png',
+              'flutter_application_1/assests/images/dice-2.png',
               width: 200,
             ),
             TextButton(
                 onPressed: rollDice, //Quer uma função ou null , ()  {}
-                child: const Text('Roll Dice'))
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                  ),
+                  foregroundColor: Colors.white,
+                  textStyle: const TextStyle(
+                    fontSize: 28,
+                  ),
+                ),
+                child: const Text('Roll Dice')),
           ],
         ),
       ),
